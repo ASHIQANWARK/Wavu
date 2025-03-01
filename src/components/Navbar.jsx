@@ -40,11 +40,12 @@ const Navbar = () => {
 
   const menuItems = [
     { name: "Home", path: "/" },
-    { name: "About", path: "#about", onClick: handleAboutClick }, // Updated for About
+    { name: "About", path: "#about", onClick: handleAboutClick },
     { name: "Impact", path: "/impact" },
     { name: "Join Us", path: "/inll" },
     { name: "Support Us", path: "/support-us" },
     { name: "Blog", path: "/blog" },
+    { name: "Contact", path: "/contact" },
   ];
 
   return (
@@ -59,6 +60,7 @@ const Navbar = () => {
             <img src={logo} alt="WAWU Logo" className="h-10 w-auto" />
           </Link>
 
+          {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-6">
             {menuItems.map(({ name, path, onClick }) =>
               onClick ? (
@@ -66,7 +68,7 @@ const Navbar = () => {
                   key={name}
                   href={path}
                   onClick={onClick}
-                  className="text-black hover:text-[#11698E] transition duration-300"
+                  className="font-extrabold text-[#000000] hover:text-[#0D5C75] transition duration-300"
                 >
                   {name}
                 </a>
@@ -74,7 +76,7 @@ const Navbar = () => {
                 <Link
                   key={name}
                   to={path}
-                  className="text-black hover:text-[#11698E] transition duration-300"
+                  className="font-extrabold text-[#000000] hover:text-[#0D5C75] transition duration-300"
                 >
                   {name}
                 </Link>
@@ -82,17 +84,19 @@ const Navbar = () => {
             )}
           </div>
 
+          {/* Donate Button (Desktop) */}
           <div className="hidden md:block">
             <Link
               to="/donate"
-              className="px-5 py-2 bg-[#11698E] text-white rounded-lg font-semibold hover:bg-[#0D5C75] transition duration-300"
+              className="px-5 py-2 bg-[#11698E] text-white rounded-lg font-bold hover:bg-[#0D5C75] transition duration-300"
             >
               Donate
             </Link>
           </div>
 
+          {/* Mobile Menu Button */}
           <button
-            className="md:hidden text-black"
+            className="md:hidden text-[#11698E]"
             onClick={() => setIsOpen(!isOpen)}
           >
             {isOpen ? <X size={28} /> : <Menu size={28} />}
@@ -100,6 +104,7 @@ const Navbar = () => {
         </div>
       </div>
 
+      {/* Mobile Navigation Menu */}
       {isOpen && (
         <>
           <div
@@ -113,20 +118,20 @@ const Navbar = () => {
             }`}
           >
             <button
-              className="absolute top-4 right-4 text-black"
+              className="absolute top-4 right-4 text-[#11698E]"
               onClick={() => setIsOpen(false)}
             >
               <X size={28} />
             </button>
 
-            <nav className="mt-12 space-y-6 text-lg font-medium">
+            <nav className="mt-12 space-y-6 text-lg font-bold">
               {menuItems.map(({ name, path, onClick }) =>
                 onClick ? (
                   <a
                     key={name}
                     href={path}
                     onClick={onClick}
-                    className="block px-4 py-2 rounded-md text-black hover:text-[#11698E]"
+                    className="block px-4 py-2 rounded-md text-[#11698E] hover:text-[#0D5C75]"
                   >
                     {name}
                   </a>
@@ -134,7 +139,7 @@ const Navbar = () => {
                   <Link
                     key={name}
                     to={path}
-                    className="block px-4 py-2 rounded-md text-black hover:text-[#11698E]"
+                    className="block px-4 py-2 rounded-md text-[#11698E] hover:text-[#0D5C75]"
                     onClick={() => setIsOpen(false)}
                   >
                     {name}
@@ -144,7 +149,7 @@ const Navbar = () => {
 
               <Link
                 to="/donate"
-                className="block bg-[#11698E] text-white rounded-lg py-3 text-center font-semibold mt-6 hover:bg-[#0D5C75] transition duration-300"
+                className="block bg-[#11698E] text-white rounded-lg py-3 text-center font-bold mt-6 hover:bg-[#0D5C75] transition duration-300"
                 onClick={() => setIsOpen(false)}
               >
                 Donate

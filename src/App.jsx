@@ -9,6 +9,7 @@ import Testimonials from './pages/Testimonials';
 import Team from './pages/Team';
 import Events from './pages/Events';
 import Inll from './pages/Inll'; // Add this import statement
+import Contacts from './pages/Contact';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/testimonials" element={<Testimonials />} />
         <Route path="/team" element={<Team />} />
         <Route path="/events" element={<Events />} />
+        <Route path="/contact" element={<Contacts />} />
       </Routes>
       <Footer />
     </Router>

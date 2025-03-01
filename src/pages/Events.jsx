@@ -45,37 +45,35 @@ const Events = () => {
 
         {/* Right Side: Text Content */}
         <div className="md:w-1/2 w-full text-center md:text-left">
+          {/* Main Quote Section */}
           <motion.p
-            className="text-lg leading-relaxed mt-4 text-gray-200"
+            className="text-lg leading-relaxed mt-4 text-gray-200 font-sans-serif"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 0.8 }}
           >
-            The hunt for{" "}
-            <strong className="text-[#fa7e02]">
-              India's next football sensation
-            </strong>{" "}
-            begins! WAVU Foundation brings you the ultimate{" "}
-            <strong className="text-white">scouting event</strong> where
-            raw talent meets opportunity. This is your chance to{" "}
-            <strong className="text-[#1bde09]">
-              train, compete, and get scouted
-            </strong>{" "}
-            by top football academies.
+            <span className="text-4xl text-[#fa7e02] font-bold">❝</span>
+            <strong className="text-[#000000]">
+              The hunt for India&apos;s next football sensation begins! WAVU
+              Foundation brings you the ultimate scouting event where raw talent
+              meets opportunity. This is your chance to train, compete, and get
+              scouted by top football academies.
+            </strong>
+            <span className="text-4xl text-[#fa7e02] font-bold">❞</span>
           </motion.p>
 
+          {/* Event Details */}
           <motion.div
-            className="mt-8 space-y-4"
+            className="mt-8 space-y-4 font-mono"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.7, duration: 1 }}
           >
             <p className="text-lg font-semibold text-gray-200">
-              📍 <span className="text-[#fa7e02]">Locations:</span> Kerala 
+              📍 <span className="text-[#fa7e02]">Locations:</span> Kerala
             </p>
             <p className="text-lg font-semibold text-gray-200">
-              📅 <span className="text-white">Event Date:</span> April
-              2025
+              📅 <span className="text-white">Event Date:</span> April 2025
             </p>
             <p className="text-lg font-semibold text-gray-200">
               👥 <span className="text-[#1bde09]">Age Group:</span> 14 - 21
@@ -83,19 +81,20 @@ const Events = () => {
             </p>
           </motion.div>
 
+          {/* Scholarship Section */}
           <motion.p
-            className="mt-8 text-lg text-gray-200"
+            className="mt-8 text-lg text-gray-200 font-sans-serif"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1, duration: 0.8 }}
           >
-            🚀 <strong className="text-[#fa7e02]">Top 10 players</strong> will
-            receive{" "}
-            <strong className="text-[#1bde09]">
-              scholarships & direct academy placements!
-            </strong>{" "}
-            Don’t miss this chance to take your football dreams to the next
-            level.
+            <span className="text-4xl text-[#fa7e02] font-bold">❝</span>
+            <strong className="text-[#000000]">
+              Top 10 players will receive scholarships & direct academy
+              placements! Don’t miss this chance to take your football dreams to
+              the next level.
+            </strong>
+            <span className="text-4xl text-[#fa7e02] font-bold">❞</span>
           </motion.p>
 
           {/* Buttons Section */}
@@ -109,7 +108,7 @@ const Events = () => {
               onClick={handleRegisterClick}
               className="bg-transparent text-[#1bde09] font-bold py-3 px-10 rounded-xl text-lg border-4 hover:scale-105 transition-all duration-300 shadow-lg"
             >
-              Register Now 
+              Register Now
             </button>
 
             <button
