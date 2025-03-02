@@ -12,6 +12,7 @@ const Home = () => {
   return (
     <div>
       <Hero />
+      
       <About />
       <MissionVision />
       <Events />

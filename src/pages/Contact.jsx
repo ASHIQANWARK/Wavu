@@ -31,7 +31,7 @@ const Contact = () => {
               </div>
               <div>
                 <h5 className="font-bold text-lg">Visit Us</h5>
-                <p className="text-lg">www.incubenation.com</p>
+                <p className="text-lg">www.WAWUfoundation.org</p>
               </div>
             </div>
             <div className="flex items-center p-6 rounded-xl shadow-xl bg-white bg-opacity-40 backdrop-blur-md">

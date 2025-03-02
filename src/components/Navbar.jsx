@@ -41,10 +41,9 @@ const Navbar = () => {
   const menuItems = [
     { name: "Home", path: "/" },
     { name: "About", path: "#about", onClick: handleAboutClick },
-    { name: "Impact", path: "/impact" },
     { name: "Join Us", path: "/inll" },
-    { name: "Support Us", path: "/support-us" },
-    { name: "Blog", path: "/blog" },
+    // { name: "Support Us", path: "/support-us" },
+    // { name: "Blog", path: "/blog" },
     { name: "Contact", path: "/contact" },
   ];
 

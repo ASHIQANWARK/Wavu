@@ -16,7 +16,7 @@ const Events = () => {
   };
 
   return (
-    <div className="relative bg-[#11698E] text-white py-20 px-6">
+    <div className="relative bg-[#0c2a36] text-white py-20 px-6">
       {/* Heading at the Top */}
       <motion.h1
         className="text-5xl font-extrabold mb-12 text-center italic font-sans bg-gradient-to-r from-[#fa7e02] via-white to-[#1bde09] bg-clip-text text-transparent"
@@ -53,7 +53,7 @@ const Events = () => {
             transition={{ delay: 0.5, duration: 0.8 }}
           >
             <span className="text-4xl text-[#fa7e02] font-bold">❝</span>
-            <strong className="text-[#000000]">
+            <strong className="text-[#ffffff]">
               The hunt for India&apos;s next football sensation begins! WAVU
               Foundation brings you the ultimate scouting event where raw talent
               meets opportunity. This is your chance to train, compete, and get
@@ -89,7 +89,7 @@ const Events = () => {
             transition={{ delay: 1, duration: 0.8 }}
           >
             <span className="text-4xl text-[#fa7e02] font-bold">❝</span>
-            <strong className="text-[#000000]">
+            <strong className="text-[#ffffff]">
               Top 10 players will receive scholarships & direct academy
               placements! Don’t miss this chance to take your football dreams to
               the next level.
