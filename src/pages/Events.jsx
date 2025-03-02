@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import brochure from "../assets/images/INLL Brochure.Pdf";
+import brochure from "../assets/images/INLLBrochure.pdf";
 import { motion } from "framer-motion";
 import logo from "../assets/images/INLL Logo.png";
 
