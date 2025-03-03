@@ -19,7 +19,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="py-16  bg-[#11698E] overflow-x-hidden">
+    <section className="py-16  bg-[#07293d] overflow-x-hidden">
       <div className="container mx-auto px-4 pt-4 max-w-full">
         <h2 className="text-4xl font-bold text-center mb-4 text-white">Contact Us</h2>
         <p className="text-center text-xl mb-12 text-gray-300">Have questions or need assistance? We are just a message away.</p>

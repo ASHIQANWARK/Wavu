@@ -19,9 +19,9 @@ const Team = () => {
     <div className="py-16 bg-white">
       <div className="container mx-auto px-6">
         {/* Section Heading */}
-        <h2 className="text-4xl font-bold text-center text-[#0b081f] mb-12">
+        <h2 className="text-4xl font-bold text-center text-[#07293d] mb-12">
           Our Team
-          <User className="inline-block w-8 h-8 ml-2 text-[#05081e]" />
+          <User className="inline-block w-8 h-8 ml-2 text-[#07293d]" />
         </h2>
 
         {/* Team Grid */}
@@ -29,7 +29,7 @@ const Team = () => {
           {team.map((member, index) => (
             <div
               key={index}
-              className="bg-[#11698E] rounded-lg shadow-lg overflow-hidden p-6 flex flex-col items-center transition-all hover:shadow-xl hover:scale-105 w-full h-[450px]"
+              className="bg-[#07293d] rounded-lg shadow-lg overflow-hidden p-6 flex flex-col items-center transition-all hover:shadow-xl hover:scale-105 w-full h-[450px]"
             >
               {/* Profile Image (Full Width & Height in Card) */}
               <div className="w-full h-60 mb-4">

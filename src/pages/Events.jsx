@@ -16,7 +16,7 @@ const Events = () => {
   };
 
   return (
-    <div className="relative bg-[#11698E] text-white py-20 px-6 rounded-bl-full">
+    <div className="relative bg-[#07293d] text-white py-20 px-6 rounded-bl-full">
       {/* Heading at the Top */}
       <motion.h1
         className="text-5xl font-extrabold mb-12 text-center italic font-sans bg-gradient-to-r from-[#fa7e02] via-white to-[#1bde09] bg-clip-text text-transparent"

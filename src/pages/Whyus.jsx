@@ -9,7 +9,7 @@ const AboutSection = () => {
       <div className="container mx-auto text-center">
         {/* Heading */}
         <h2 className="text-3xl font-bold text-gray-900">
-          Why <span className="text-[#11698E]">WAWU Foundation?</span>
+          Why <span className="text-[#07293d]">WAWU Foundation?</span>
         </h2>
         <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
           India’s youth possess raw talent and passion for football, but they
@@ -22,7 +22,7 @@ const AboutSection = () => {
         {/* Cards Section */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-10">
           {/* Card 1 */}
-          <div className="bg-[#11698E] shadow-lg rounded-2xl overflow-hidden">
+          <div className="bg-[#07293d] shadow-lg rounded-2xl overflow-hidden">
             <img
               src={potentialimg}
               alt="Unlocking Potential"
@@ -40,7 +40,7 @@ const AboutSection = () => {
           </div>
 
           {/* Card 2 */}
-          <div className="bg-[#11698E] shadow-lg rounded-2xl overflow-hidden">
+          <div className="bg-[#07293d] shadow-lg rounded-2xl overflow-hidden">
             <img
               src={teamimage}
               alt="Bridging the Gap"
@@ -59,7 +59,7 @@ const AboutSection = () => {
           </div>
 
           {/* Card 3 */}
-          <div className="bg-[#11698E] shadow-lg rounded-2xl overflow-hidden">
+          <div className="bg-[#07293d] shadow-lg rounded-2xl overflow-hidden">
             <img
               src={team2img}
               alt="Transforming Lives"
@@ -77,7 +77,7 @@ const AboutSection = () => {
           </div>
 
           {/* Card 4 */}
-          <div className="bg-[#11698E] shadow-lg rounded-2xl overflow-hidden">
+          <div className="bg-[#07293d] shadow-lg rounded-2xl overflow-hidden">
             <img
               src={roleIMG}
               alt="Creating Role Models"

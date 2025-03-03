@@ -11,6 +11,7 @@ import {
   FaDatabase,
   FaMoneyBillWave,
   FaUser,
+  FaTeamspeak,
 } from "react-icons/fa";
 import bannerImage from "../assets/images/INLL Logo.png";
 import wawuLogo from "../assets/images/Wawu black.png";
@@ -25,7 +26,7 @@ const INLLBrochure = () => {
   return (
     <div className="font-sans text-black">
       {/* Hero Section */}
-      <header className="relative bg-cover bg-gradient-to-r from-[#7f7f7f] to-[#0A4A6E] bg-center h-auto flex flex-col items-center rounded-tr-full rounded-bl-full justify-between px-4 sm:px-8 py-8 sm:py-12 z-10">
+      <header className="relative bg-cover bg-[#07293d] bg-center h-auto flex flex-col items-center rounded-tr-full rounded-bl-full justify-between px-4 sm:px-8 py-8 sm:py-12 z-10">
         <div className="w-full max-w-screen-lg">
           {/* Left Content */}
           <div className="bg-opacity-50 p-4 sm:p-8 rounded-lg text-center md:text-left">
@@ -82,7 +83,7 @@ const INLLBrochure = () => {
       {/* About Section */}
       <section className="max-w-6xl mx-auto py-12 sm:py-20 px-4 sm:px-8">
         <motion.div
-          className="bg-gradient-to-r from-[#11698E] to-[#0A4A6E] p-6 sm:p-8 rounded-lg shadow-2xl flex flex-col md:flex-row items-center gap-6 sm:gap-8 transform hover:scale-102 transition-transform duration-300"
+          className="bg-[#07293d] p-6 sm:p-8 rounded-lg shadow-2xl flex flex-col md:flex-row items-center gap-6 sm:gap-8 transform hover:scale-102 transition-transform duration-300"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
@@ -378,8 +379,13 @@ const INLLBrochure = () => {
             <div className="flex flex-col sm:flex-row justify-center gap-6">
               {/* Individual Button */}
               <Link to="/register/individual">
-                <button className="flex items-center gap-3 bg-blue-500 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg shadow-lg transition-all duration-300 transform hover:scale-110">
-                  <FaUser className="text-xl" /> Individual
+                <button className="flex items-center gap-3 bg-orange-500 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg shadow-lg transition-all duration-300 transform hover:scale-110">
+                  <FaUser className="text-xl" /> Individual Players
+                </button>
+              </Link>
+              <Link to="/register/individualteam">
+                <button className="flex items-center gap-3 bg-white-500 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg shadow-lg transition-all duration-300 transform hover:scale-110">
+                  <FaTeamspeak className="text-xl" /> Individual Team
                 </button>
               </Link>
 

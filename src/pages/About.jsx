@@ -2,7 +2,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <div id="about" className="p-12 text-center bg-[#11698E] text-white rounded-b-full">
+    <div id="about" className="p-12 text-center bg-[#07293d] text-white rounded-b-full">
       {/* Heading with better contrast and emphasis */}
       <h1 className="text-4xl font-extrabold text-white uppercase tracking-wide">
         About Us

@@ -4,7 +4,7 @@ import Logo from "../assets/images/Wawu black.png"
 
 const Footer = () => {
   return (
-    <footer className="bg-[#11698E] text-white">
+    <footer className="bg-[#07293d] text-white">
       <div className="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-4 gap-8">
         
         {/* Column 1: Logo */}
@@ -73,7 +73,7 @@ const Footer = () => {
       </div>
 
       {/* Copyright Section */}
-      <div className="bg-[#11698E] py-4 text-center">
+      <div className="bg-[#07293d] py-4 text-center">
         <p className="text-gray-400 text-sm">&copy; 2025 Ique Ventures. All rights reserved.</p>
       </div>
     </footer>
