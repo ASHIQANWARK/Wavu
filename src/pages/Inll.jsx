@@ -24,37 +24,39 @@ const INLLBrochure = () => {
   return (
     <div className="font-sans text-black">
       {/* Hero Section */}
-      <header className="relative bg-cover bg-gradient-to-r from-[#fcfcfc] to-[#0A4A6E] bg-center h-auto flex flex-col items-center justify-between px-4 sm:px-8 py-8 sm:py-12">
-        {/* Left Content */}
-        <div className="bg-opacity-50 p-4 sm:p-8 rounded-lg w-full text-center md:text-left">
-          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold mb-4 sm:mb-6 italic bg-gradient-to-r from-[#fb8005] via-white to-[#138808] bg-clip-text text-transparent animate-gradient">
-            India's Next Legend League (INLL)
-          </h1>
-          <h2 className="text-lg sm:text-xl md:text-2xl font-semibold mb-4 text-white">
-            Searching for India’s Football Legends
-          </h2>
-          <h3 className="text-base sm:text-lg flex flex-col items-center md:items-start mb-4">
-            <p className="mb-2 text-white">Presented By</p>
-            <div className="flex items-center justify-center md:justify-start">
-              <img
-                src={wawuLogo}
-                alt="WAWU Logo"
-                className="h-10 sm:h-12 md:h-16 w-auto transform hover:scale-105 transition-transform duration-300"
-              />
-            </div>
-          </h3>
-          <p className="text-xs sm:text-sm md:text-base font-semibold text-white">
-            In association with Ofioh Sporty Private Limited
-          </p>
-        </div>
+      <header className="relative bg-cover bg-gradient-to-r from-[#bbbaba] to-[#0A4A6E] bg-center h-auto flex flex-col items-center justify-between px-4 sm:px-8 py-8 sm:py-12 z-10">
+        <div className="w-full max-w-screen-lg">
+          {/* Left Content */}
+          <div className="bg-opacity-50 p-4 sm:p-8 rounded-lg text-center md:text-left">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold mb-4 sm:mb-6 italic bg-gradient-to-r from-[#fb8005] via-white to-[#138808] bg-clip-text text-transparent animate-gradient">
+              India's Next Legend League (INLL)
+            </h1>
+            <h2 className="text-lg sm:text-xl md:text-2xl font-semibold mb-4 text-white">
+              Searching for India’s Football Legends
+            </h2>
+            <h3 className="text-base sm:text-lg flex flex-col items-center md:items-start mb-4">
+              <p className="mb-2 text-white">Presented By</p>
+              <div className="flex items-center justify-center md:justify-start">
+                <img
+                  src={wawuLogo}
+                  alt="WAWU Logo"
+                  className="h-10 sm:h-12 md:h-16 lg:h-20 w-auto transform hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+            </h3>
+            <p className="text-xs sm:text-sm md:text-base font-semibold text-white">
+              In association with Ofioh Sporty Private Limited
+            </p>
+          </div>
 
-        {/* Right Image */}
-        <div className="w-full flex justify-center mt-8">
-          <img
-            src={bannerImage}
-            alt="Hero"
-            className="rounded-lg h-[50px] sm:h-[100px] md:h-[150px] lg:h-[200px] w-auto object-cover transform hover:scale-105 transition-transform duration-300"
-          />
+          {/* Right Image */}
+          <div className="w-full flex justify-center mt-8">
+            <img
+              src={bannerImage}
+              alt="Hero"
+              className="rounded-lg h-[120px] sm:h-[150px] md:h-[250px] lg:h-[150px] w-auto object-cover transform hover:scale-105 transition-transform duration-300"
+            />
+          </div>
         </div>
       </header>
 
@@ -204,19 +206,25 @@ const INLLBrochure = () => {
           >
             {[
               {
-                icon: <FaGlobe className="text-3xl sm:text-4xl text-blue-400" />,
+                icon: (
+                  <FaGlobe className="text-3xl sm:text-4xl text-blue-400" />
+                ),
                 title: "Nationwide Reach",
                 description:
                   "The tournament will be organized across India, ensuring inclusivity from villages to cities.",
               },
               {
-                icon: <FaTrophy className="text-3xl sm:text-4xl text-yellow-400" />,
+                icon: (
+                  <FaTrophy className="text-3xl sm:text-4xl text-yellow-400" />
+                ),
                 title: "Competitive Format",
                 description:
                   "Teams will compete in a league format to provide maximum exposure to every player.",
               },
               {
-                icon: <FaUserCheck className="text-3xl sm:text-4xl text-green-400" />,
+                icon: (
+                  <FaUserCheck className="text-3xl sm:text-4xl text-green-400" />
+                ),
                 title: "WAWU Representatives",
                 description:
                   "WAWU scouts will be present at every tournament to identify and select promising talents.",
@@ -278,19 +286,25 @@ const INLLBrochure = () => {
           >
             {[
               {
-                icon: <FaDatabase className="text-3xl sm:text-4xl text-blue-400" />,
+                icon: (
+                  <FaDatabase className="text-3xl sm:text-4xl text-blue-400" />
+                ),
                 title: "Continuous Tracking",
                 description:
                   "Recorded in WAWU database for ongoing development.",
               },
               {
-                icon: <FaMoneyBillWave className="text-3xl sm:text-4xl text-yellow-400" />,
+                icon: (
+                  <FaMoneyBillWave className="text-3xl sm:text-4xl text-yellow-400" />
+                ),
                 title: "Funding & Training",
                 description:
                   "Receive funding for training, accommodation, and education.",
               },
               {
-                icon: <FaUsers className="text-3xl sm:text-4xl text-green-400" />,
+                icon: (
+                  <FaUsers className="text-3xl sm:text-4xl text-green-400" />
+                ),
                 title: "Professional Network",
                 description:
                   "Connect with mentors and clubs for career growth.",
@@ -333,7 +347,7 @@ const INLLBrochure = () => {
 
       {/* Registration */}
       <section className="max-w-6xl mx-auto py-12 sm:py-20 px-4 sm:px-8">
-      <motion.h2
+        <motion.h2
           className="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-8 sm:mb-12 text-center text-black tracking-wide uppercase"
           initial={{ opacity: 0, y: -30 }}
           whileInView={{ opacity: 1, y: 0 }}
