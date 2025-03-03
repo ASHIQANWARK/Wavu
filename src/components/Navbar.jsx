@@ -101,7 +101,7 @@ const Navbar = () => {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden text-white"
+            className="md:hidden text-black"
             onClick={() => setIsOpen(!isOpen)}
           >
             {isOpen ? <X size={28} /> : <Menu size={28} />}
@@ -118,7 +118,7 @@ const Navbar = () => {
           ></div>
 
           <div
-            className={`fixed top-0 left-0 w-3/4 max-w-sm h-full bg-white shadow-lg z-50 p-6 transition-transform transform ${
+            className={`fixed top-0 left-0 w-3/4 max-w-sm h-full bg-black shadow-lg z-50 p-6 transition-transform transform ${
               isOpen ? "translate-x-0" : "-translate-x-full"
             }`}
           >

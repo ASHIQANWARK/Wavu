@@ -7,7 +7,7 @@ const MissionVision = () => {
     <section className=" bg-transparent bg-opacity-50 py-16 px-6">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
         {/* Mission Section */}
-        <div className="relative flex flex-col items-center text-center bg-[#11698E] shadow-lg rounded-2xl p-8 transition transform hover:scale-105">
+        <div className="relative flex flex-col items-center text-center bg-[#11698E] shadow-lg rounded-tr-full rounded-bl-full p-8 transition transform hover:scale-105">
           <img
             src={missionImg}
             alt="Mission"
@@ -38,7 +38,7 @@ const MissionVision = () => {
         </div>
 
         {/* Vision Section */}
-        <div className="relative flex flex-col items-center text-center bg-[#11698E] shadow-lg rounded-2xl p-8 transition transform hover:scale-105">
+        <div className="relative flex flex-col items-center text-center bg-[#11698E] shadow-lg rounded-br-full rounded-tl-full p-8 transition transform hover:scale-105">
           <img
             src={visionImg}
             alt="Vision"

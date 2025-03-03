@@ -10,12 +10,13 @@ import {
   FaHandshake,
   FaDatabase,
   FaMoneyBillWave,
+  FaUser,
 } from "react-icons/fa";
 import bannerImage from "../assets/images/INLL Logo.png";
 import wawuLogo from "../assets/images/Wawu black.png";
 import whyINLLImage from "../assets/images/hero4.jpg";
 import highlightsImage from "../assets/images/hero5.jpg";
-import supportImage from "../assets/images/hero3.jpg";
+import supportImage from "../assets/images/WAWU P3.jpg";
 import registrationImage from "../assets/images/INLL Logo.png";
 
 const INLLBrochure = () => {
@@ -24,7 +25,7 @@ const INLLBrochure = () => {
   return (
     <div className="font-sans text-black">
       {/* Hero Section */}
-      <header className="relative bg-cover bg-gradient-to-r from-[#bbbaba] to-[#0A4A6E] bg-center h-auto flex flex-col items-center justify-between px-4 sm:px-8 py-8 sm:py-12 z-10">
+      <header className="relative bg-cover bg-gradient-to-r from-[#7f7f7f] to-[#0A4A6E] bg-center h-auto flex flex-col items-center rounded-tr-full rounded-bl-full justify-between px-4 sm:px-8 py-8 sm:py-12 z-10">
         <div className="w-full max-w-screen-lg">
           {/* Left Content */}
           <div className="bg-opacity-50 p-4 sm:p-8 rounded-lg text-center md:text-left">
@@ -102,7 +103,7 @@ const INLLBrochure = () => {
         </motion.div>
       </section>
 
-      {/* Highlights Section */}
+      {/* Why INLL Section */}
       <section className="max-w-6xl mx-auto py-12 sm:py-20 px-4 sm:px-8">
         <motion.h2
           className="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-8 sm:mb-12 text-center text-black tracking-wider uppercase"
@@ -266,9 +267,10 @@ const INLLBrochure = () => {
       </section>
 
       {/* Post-Selection Support */}
-      <section className="max-w-6xl mx-auto py-12 sm:py-20 px-4 sm:px-8">
+      <section className="max-w-6xl mx-auto py-16 sm:py-24 px-6 sm:px-12">
+        {/* Title */}
         <motion.h2
-          className="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-8 sm:mb-12 text-center text-black tracking-wide uppercase"
+          className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-center text-gray-900 mb-12 tracking-wide"
           initial={{ opacity: 0, y: -30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
@@ -276,144 +278,137 @@ const INLLBrochure = () => {
           Post-Selection Support
         </motion.h2>
 
-        <div className="flex flex-col-reverse md:flex-row items-center gap-8 sm:gap-12">
-          {/* Left Side: Feature Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          {/* Left: Image */}
           <motion.div
-            className="w-full md:w-1/2 grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6"
-            initial={{ opacity: 0, x: -50 }}
+            className="relative flex justify-center"
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.7 }}
+          >
+            <img
+              src={supportImage}
+              alt="Post-Selection Support"
+              className="rounded-2xl shadow-2xl max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl h-auto hover:scale-105 transition-transform duration-500"
+            />
+          </motion.div>
+
+          {/* Right: Benefits List */}
+          <motion.div
+            className="space-y-8"
+            initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.7 }}
           >
             {[
               {
-                icon: (
-                  <FaDatabase className="text-3xl sm:text-4xl text-blue-400" />
-                ),
+                icon: <FaDatabase className="text-4xl text-blue-500" />,
                 title: "Continuous Tracking",
                 description:
-                  "Recorded in WAWU database for ongoing development.",
+                  "Your journey is recorded in WAWU’s database for ongoing growth and development.",
               },
               {
-                icon: (
-                  <FaMoneyBillWave className="text-3xl sm:text-4xl text-yellow-400" />
-                ),
+                icon: <FaMoneyBillWave className="text-4xl text-yellow-500" />,
                 title: "Funding & Training",
                 description:
-                  "Receive funding for training, accommodation, and education.",
+                  "We provide funding support for training, accommodation, and education.",
               },
               {
-                icon: (
-                  <FaUsers className="text-3xl sm:text-4xl text-green-400" />
-                ),
+                icon: <FaUsers className="text-4xl text-green-500" />,
                 title: "Professional Network",
                 description:
-                  "Connect with mentors and clubs for career growth.",
+                  "Gain exclusive access to mentors, clubs, and career opportunities.",
               },
             ].map((item, index) => (
-              <motion.div
+              <div
                 key={index}
-                className="bg-gray-900 bg-opacity-80 p-4 sm:p-6 rounded-xl shadow-lg hover:shadow-2xl border border-gray-700 transition-all duration-300 hover:scale-105 transform"
-                initial={{ opacity: 0, x: -20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.2 }}
+                className="flex items-center space-x-6 p-4 rounded-xl bg-white shadow-lg hover:shadow-2xl transition-shadow duration-300"
               >
-                <div className="flex justify-center mb-4">{item.icon}</div>
-                <h3 className="text-lg sm:text-xl font-semibold text-center text-white">
-                  {item.title}
-                </h3>
-                <p className="text-xs sm:text-sm text-gray-400 text-center mt-2">
-                  {item.description}
-                </p>
-              </motion.div>
+                <div className="bg-gradient-to-br from-gray-200 to-gray-100 p-4 rounded-full shadow-md">
+                  {item.icon}
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold text-gray-900">{item.title}</h3>
+                  <p className="text-gray-600">{item.description}</p>
+                </div>
+              </div>
             ))}
-          </motion.div>
-
-          {/* Right Side: Image */}
-          <motion.div
-            className="w-full md:w-1/2 relative"
-            initial={{ opacity: 0, scale: 0.8 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.7 }}
-          >
-            <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-600 opacity-40 rounded-lg blur-lg"></div>
-            <img
-              src={supportImage}
-              alt="Post-Selection Support"
-              className="rounded-lg shadow-2xl w-full h-auto transform hover:scale-105 transition-transform duration-500"
-            />
           </motion.div>
         </div>
       </section>
 
-      {/* Registration */}
-      <section className="max-w-6xl mx-auto py-12 sm:py-20 px-4 sm:px-8">
+
+      <section className="max-w-7xl mx-auto py-16 px-6 sm:px-12 lg:px-16">
+        {/* Section Heading */}
         <motion.h2
-          className="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-8 sm:mb-12 text-center text-black tracking-wide uppercase"
+          className="text-4xl sm:text-5xl font-bold mb-12 text-center text-gray-900 tracking-wide uppercase"
           initial={{ opacity: 0, y: -30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          Register Now !!!
+          Registration
         </motion.h2>
-        <div className="flex flex-col md:flex-row items-center gap-6 sm:gap-8">
-          {/* Left Side: Image with Hover Effect */}
-          <div className="w-full md:w-1/2 transform transition-transform duration-300 hover:scale-105">
+
+        <div className="flex flex-col md:flex-row items-center gap-10">
+          {/* Left Side: Image */}
+          <motion.div
+            className="w-full md:w-1/2 overflow-hidden rounded-xl shadow-xl"
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.7 }}
+          >
             <img
               src={registrationImage}
               alt="Registration"
-              className="rounded-lg shadow-2xl w-full h-auto"
+              className="w-full h-auto object-cover transform hover:scale-105 transition-transform duration-500"
             />
-          </div>
+          </motion.div>
 
-          {/* Right Side: Registration Details with Gradient Background */}
-          <div className="w-full md:w-1/2 bg-gradient-to-r from-[#11698E] to-[#0A4A6E] p-6 sm:p-8 rounded-lg shadow-2xl text-center transform transition-transform duration-300 hover:scale-105">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold mb-6 sm:mb-8 text-white">
-              How to Register
-            </h2>
+          {/* Right Side: Registration Options */}
+          <motion.div
+            className="w-full md:w-1/2 bg-gradient-to-r from-[#0F3460] to-[#16213E] p-8 sm:p-12 rounded-xl shadow-xl text-center border border-gray-700"
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.7 }}
+          >
+            <h3 className="text-3xl font-semibold text-white mb-6">
+              Choose Your Registration Type
+            </h3>
 
-            {/* Registration Steps with Icons */}
-            <div className="space-y-4 sm:space-y-6">
-              <div className="flex items-center space-x-4">
-                <div className="bg-white p-2 sm:p-3 rounded-full">
-                  <FaSearch className="text-xl sm:text-2xl text-[#11698E]" />
-                </div>
-                <p className="text-sm sm:text-lg text-white">
-                  Complete the registration form online.
-                </p>
-              </div>
+            <div className="flex flex-col sm:flex-row justify-center gap-6">
+              {/* Individual Button */}
+              <Link to="/register/individual">
+                <button className="flex items-center gap-3 bg-blue-500 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg shadow-lg transition-all duration-300 transform hover:scale-110">
+                  <FaUser className="text-xl" /> Individual
+                </button>
+              </Link>
 
-              <div className="flex items-center space-x-4">
-                <div className="bg-white p-2 sm:p-3 rounded-full">
-                  <FaMoneyBillWave className="text-xl sm:text-2xl text-[#11698E]" />
-                </div>
-                <p className="text-sm sm:text-lg text-white">
-                  Participation is free of charge.
-                </p>
-              </div>
-
-              <div className="flex items-center space-x-4">
-                <div className="bg-white p-2 sm:p-3 rounded-full">
-                  <FaGlobe className="text-xl sm:text-2xl text-[#11698E]" />
-                </div>
-                <p className="text-sm sm:text-lg text-white">
-                  Attend the trials at your nearest city.
-                </p>
-              </div>
+              {/* Organizing Partner Button */}
+              <Link to="/register/partner">
+                <button className="flex items-center gap-3 bg-green-500 hover:bg-green-700 text-white font-semibold py-3 px-6 rounded-lg shadow-lg transition-all duration-300 transform hover:scale-110">
+                  <FaUsers className="text-xl" /> Organizing Partner
+                </button>
+              </Link>
             </div>
-
-            {/* Registration Button */}
-            <div className="mt-6 sm:mt-8">
-              <a
-                href={googleFormLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-yellow-400 text-[#0A4A6E] px-4 sm:px-6 py-2 sm:py-3 text-sm sm:text-lg font-semibold rounded-lg shadow-md hover:bg-yellow-500 transition duration-300"
-              >
-                Register Now
-              </a>
-            </div>
-          </div>
+          </motion.div>
         </div>
+
+        {/* How to Register Section */}
+        <motion.div
+          className="mt-16 bg-gradient-to-r from-[#0F3460] to-[#16213E] p-8 sm:p-10 rounded-tr-full shadow-lg text-center border border-gray-200"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7 }}
+        >
+          <h3 className="text-3xl font-semibold text-white mb-5">
+            How to Register
+          </h3>
+          <div className="space-y-3 text-lg text-white">
+            <p>✅ Complete the registration form online.</p>
+            <p>✅ Participation is free of charge.</p>
+            <p>✅ Attend the trials at your nearest city.</p>
+          </div>
+        </motion.div>
       </section>
     </div>
   );

@@ -4,7 +4,7 @@ import { FaInstagram, FaFacebook, FaLinkedin, FaXTwitter } from "react-icons/fa6
 
 // Correct Imports for Local Images
 import shafiImage from "../assets/images/IMG_3596.png";
-import ckImage from "../assets/images/vineeth.jpg";
+import ckImage from "../assets/images/WAWUP4.jpg";
 import abidImage from "../assets/images/abid.jpg";
 
 
