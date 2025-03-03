@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom'; // Replace BrowserRouter with HashRouter
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
@@ -8,7 +8,7 @@ import Mission from './pages/Mission';
 import Testimonials from './pages/Testimonials';
 import Team from './pages/Team';
 import Events from './pages/Events';
-import Inll from './pages/Inll'; // Add this import statement
+import Inll from './pages/Inll';
 import Contacts from './pages/Contact';
 
 function App() {
@@ -18,7 +18,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-         <Route path ="/inll" element={<Inll />} />
+        <Route path="/inll" element={<Inll />} />
         <Route path="/mission" element={<Mission />} />
         <Route path="/testimonials" element={<Testimonials />} />
         <Route path="/team" element={<Team />} />
@@ -31,4 +31,3 @@ function App() {
 }
 
 export default App;
-
