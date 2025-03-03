@@ -25,7 +25,7 @@ const GetInvolved = () => {
           <p className="text-[#11698E] mt-2 relative z-10">
             Your contributions can change the lives of young footballers.
           </p>
-          <button className="mt-4 bg-[#11698E] text-white py-2 px-4 rounded-md hover:bg-[#11698E]transition relative z-10">
+          <button className="mt-4 bg-[#11698E] text-white py-2 px-4 rounded-md hover:bg-[#11698E] transition relative z-10">
             Donate Now
           </button>
         </div>

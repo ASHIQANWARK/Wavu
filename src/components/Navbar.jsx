@@ -41,7 +41,7 @@ const Navbar = () => {
   const menuItems = [
     { name: "Home", path: "/" },
     { name: "About", path: "#about", onClick: handleAboutClick },
-    { name: "Join Us", path: "/inll" },
+    { name: "INLL", path: "/inll" },
     // { name: "Support Us", path: "/support-us" },
     // { name: "Blog", path: "/blog" },
     { name: "Contact", path: "/contact" },
@@ -67,7 +67,9 @@ const Navbar = () => {
                   key={name}
                   href={path}
                   onClick={onClick}
-                  className="font-extrabold text-[#000000] hover:text-[#0D5C75] transition duration-300"
+                  className={`font-extrabold ${
+                    isScrolled ? "text-[#11698E]" : "text-white"
+                  } hover:text-[#0D5C75] transition duration-300`}
                 >
                   {name}
                 </a>
@@ -75,7 +77,9 @@ const Navbar = () => {
                 <Link
                   key={name}
                   to={path}
-                  className="font-extrabold text-[#000000] hover:text-[#0D5C75] transition duration-300"
+                  className={`font-extrabold ${
+                    isScrolled ? "text-[#11698E]" : "text-white"
+                  } hover:text-[#0D5C75] transition duration-300`}
                 >
                   {name}
                 </Link>
@@ -87,7 +91,9 @@ const Navbar = () => {
           <div className="hidden md:block">
             <Link
               to="/donate"
-              className="px-5 py-2 bg-[#11698E] text-white rounded-lg font-bold hover:bg-[#0D5C75] transition duration-300"
+              className={`px-5 py-2 ${
+                isScrolled ? "bg-[#11698E]" : "bg-white text-[#11698E]"
+              } rounded-lg font-bold hover:bg-[#0D5C75] hover:text-white transition duration-300`}
             >
               Donate
             </Link>
@@ -95,7 +101,7 @@ const Navbar = () => {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden text-[#11698E]"
+            className="md:hidden text-white"
             onClick={() => setIsOpen(!isOpen)}
           >
             {isOpen ? <X size={28} /> : <Menu size={28} />}

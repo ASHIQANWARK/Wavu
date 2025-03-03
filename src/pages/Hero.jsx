@@ -4,7 +4,7 @@ import heroBg from "../assets/images/hero3.jpg"; // Import the image
 const Hero = () => {
   return (
     <section
-      className="relative w-full h-screen bg-cover bg-center flex flex-col items-center justify-center text-white text-center px-6"
+      className="relative w-full h-screen bg-cover bg-center  flex flex-col items-center justify-center text-white text-center px-6"
       style={{
         backgroundImage: `url(${heroBg})`,
         backgroundSize: "cover", // Ensures full coverage
@@ -13,7 +13,7 @@ const Hero = () => {
       }}
     >
       {/* Overlay for better text visibility */}
-      <div className="absolute inset-0 bg-opacity-50"></div>
+      <div className="absolute inset-0 backdrop-brightness-80 bg-opacity-50"></div>
 
       {/* Content */}
       <div className="relative z-10 px-4 md:px-10">

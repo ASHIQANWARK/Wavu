@@ -11,7 +11,7 @@ import abidImage from "../assets/images/abid.jpg";
 const team = [
   { name: "CK VINEETH", role: "Ambassador", image: ckImage },
   { name: "SHAFI SHOUKATH", role: "FOUNDER", image: shafiImage },
-  { name: "SAINUM ABID K.A", role: "PROJECT MANAGER", image:abidImage },
+  { name: "SAINUL ABID K.A", role: "PROJECT MANAGER", image:abidImage },
 ]
 
 const Team = () => {
