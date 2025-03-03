@@ -19,12 +19,20 @@ const MissionVision = () => {
             </h1>
             <p className="text-white text-lg leading-relaxed max-w-3xl mx-auto">
               At WAVU Foundation, we believe talent knows no boundaries, but
-              opportunities do. Our mission is to **discover, nurture, and
-              empower** young footballers through scholarships, world-class
-              training, and global exposure. With strategic academy
-              partnerships, we provide **top-tier coaching, mentorship, and
-              career-building opportunities**. Together, we can **unlock
-              potential and transform dreams into reality**.
+              opportunities do. Our mission is to{" "}
+              <span className="font-extrabold ">
+                discover, nurture, and empower
+              </span>{" "}
+              young footballers through scholarships, world-class training, and
+              global exposure. With strategic academy partnerships, we provide{" "}
+              <span className="font-bold text-[#fff200]">
+                tier coaching, mentorship, and career-building opportunities
+              </span>
+              . Together, we can{" "}
+              <span className="font-extrabold">
+                unlock potential and transform dreams into reality
+              </span>
+              .
             </p>
           </div>
         </div>
@@ -41,13 +49,19 @@ const MissionVision = () => {
               Our Vision
             </h1>
             <p className="text-white text-lg leading-relaxed max-w-3xl mx-auto">
-              We envision a world where **young footballers** get the chance to
-              showcase their talent, receive **elite training and mentorship**,
+              We envision a world where{" "}
+              <span className="font-extrabold">young footballers</span> get the
+              chance to showcase their talent, receive{" "}
+              <span className="font-extrabold text-[#fff200]">
+                elite training and mentorship
+              </span>{" "}
               and turn their passion into a professional career. WAVU Foundation
-              is dedicated to **breaking barriers** and creating pathways for
-              future football stars. With the right support, these athletes can
-              **inspire generations** and leave a lasting legacy in the world of
-              football.
+              is dedicated to{" "}
+              <span className="font-extrabold">breaking barriers</span> and
+              creating pathways for future football stars. With the right
+              support, these athletes can
+              <span className="font-extrabold"> inspire generations</span> and
+              leave a lasting legacy in the world of football.
             </p>
           </div>
         </div>

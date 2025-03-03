@@ -64,18 +64,18 @@ const Events = () => {
 
           {/* Event Details */}
           <motion.div
-            className="mt-8 space-y-4 font-mono"
+            className="mt-8 space-y-4 font-sans-serif"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.7, duration: 1 }}
           >
-            <p className="text-lg font-semibold text-gray-200">
+            <p className="text-lg font-extrabold font-sans-serif text-white">
               📍 <span className="text-[#fa7e02]">Locations:</span> Kerala
             </p>
-            <p className="text-lg font-semibold text-gray-200">
+            <p className="text-lg font-extrabold font-sans-serif  text-white">
               📅 <span className="text-white">Event Date:</span> April 2025
             </p>
-            <p className="text-lg font-semibold text-gray-200">
+            <p className="text-lg font-extrabold font-sans-serif  text-white">
               👥 <span className="text-[#1bde09]">Age Group:</span> 14 - 21
               Years
             </p>

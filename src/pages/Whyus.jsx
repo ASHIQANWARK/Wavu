@@ -22,17 +22,17 @@ const AboutSection = () => {
         {/* Cards Section */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-10">
           {/* Card 1 */}
-          <div className="bg-white shadow-lg rounded-2xl overflow-hidden">
+          <div className="bg-[#11698E] shadow-lg rounded-2xl overflow-hidden">
             <img
               src={potentialimg}
               alt="Unlocking Potential"
               className="w-full h-52 object-cover"
             />
             <div className="p-6 text-center">
-              <h3 className="font-bold text-lg text-gray-900">
+              <h3 className="font-bold text-lg text-white">
                 Unlocking Potential
               </h3>
-              <p className="text-gray-600 text-sm mt-2">
+              <p className="text-white text-sm mt-2">
                 India’s youth possess raw talent and passion for football, but
                 they lack structured pathways to pursue the sport professionally.
               </p>
@@ -40,17 +40,17 @@ const AboutSection = () => {
           </div>
 
           {/* Card 2 */}
-          <div className="bg-white shadow-lg rounded-2xl overflow-hidden">
+          <div className="bg-[#11698E] shadow-lg rounded-2xl overflow-hidden">
             <img
               src={teamimage}
               alt="Bridging the Gap"
               className="w-full h-52 object-cover"
             />
             <div className="p-6 text-center">
-              <h3 className="font-bold text-lg text-gray-900">
+              <h3 className="font-bold text-lg text-white">
                 Bridging the Gap
               </h3>
-              <p className="text-gray-600 text-sm mt-2">
+              <p className="text-white text-sm mt-2">
                 By providing access to professional coaching, financial support,
                 and opportunities, WAWU fills the void in India’s football
                 development ecosystem.
@@ -59,17 +59,17 @@ const AboutSection = () => {
           </div>
 
           {/* Card 3 */}
-          <div className="bg-white shadow-lg rounded-2xl overflow-hidden">
+          <div className="bg-[#11698E] shadow-lg rounded-2xl overflow-hidden">
             <img
               src={team2img}
               alt="Transforming Lives"
               className="w-full h-52 object-cover"
             />
             <div className="p-6 text-center">
-              <h3 className="font-bold text-lg text-gray-900">
+              <h3 className="font-bold text-lg text-white">
                 Transforming Lives
               </h3>
-              <p className="text-gray-600 text-sm mt-2">
+              <p className="text-white text-sm mt-2">
                 Football is more than just a sport; it teaches discipline,
                 teamwork, leadership, and resilience.
               </p>
@@ -77,17 +77,17 @@ const AboutSection = () => {
           </div>
 
           {/* Card 4 */}
-          <div className="bg-white shadow-lg rounded-2xl overflow-hidden">
+          <div className="bg-[#11698E] shadow-lg rounded-2xl overflow-hidden">
             <img
               src={roleIMG}
               alt="Creating Role Models"
               className="w-full h-52 object-cover"
             />
             <div className="p-6 text-center">
-              <h3 className="font-bold text-lg text-gray-900">
+              <h3 className="font-bold text-lg text-white">
                 Creating Role Models
               </h3>
-              <p className="text-gray-600 text-sm mt-2">
+              <p className="text-white text-sm mt-2">
                 We aim to develop football stars who inspire others and represent
                 India on global platforms.
               </p>

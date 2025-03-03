@@ -46,6 +46,9 @@ const GetInvolved = () => {
           <p className="text-[#11698E] mt-2 relative z-10">
             Collaborate with WAWU to expand opportunities for players.
           </p>
+          <button className="mt-4 bg-[#11698E] text-white py-2 px-4 rounded-md hover:bg-[#11698E] transition relative z-10">
+            Become a Partner
+          </button>
         </div>
 
         {/* Volunteer Card */}
@@ -63,6 +66,9 @@ const GetInvolved = () => {
             Join our team and make a direct impact on the next generation of
             Indian football stars.
           </p>
+          <button className="mt-4 bg-[#11698E] text-white py-2 px-4 rounded-md hover:bg-[#11698E] transition relative z-10">
+            Volunteer Now
+          </button>
         </div>
       </div>
     </section>
