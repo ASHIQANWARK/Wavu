@@ -15,7 +15,7 @@ const Contact = () => {
   const sendWhatsAppMessage = (e) => {
     e.preventDefault();
     const whatsappMessage = `Name: ${formData.name}%0AEmail: ${formData.email}%0ASubject: ${formData.subject}%0AMessage: ${formData.message}`;
-    window.open(`https://wa.me/9035514814?text=${whatsappMessage}`, "_blank");
+    window.open(`https://wa.me/9035140186?text=${whatsappMessage}`, "_blank");
   };
 
   return (
@@ -31,7 +31,7 @@ const Contact = () => {
               </div>
               <div>
                 <h5 className="font-bold text-lg">Visit Us</h5>
-                <p className="text-lg">www.WAWUfoundation.org</p>
+                <p className="text-lg">www.wawu.foundation</p>
               </div>
             </div>
             <div className="flex items-center p-6 rounded-xl shadow-xl bg-white bg-opacity-40 backdrop-blur-md">
@@ -40,7 +40,7 @@ const Contact = () => {
               </div>
               <div>
                 <h5 className="font-bold text-lg">Call Us</h5>
-                <p className="text-lg">+91-9035514814</p>
+                <p className="text-lg">+91 9035140186</p>
               </div>
             </div>
             <div className="flex items-center p-6 rounded-xl shadow-xl bg-white bg-opacity-40 backdrop-blur-md">
@@ -49,7 +49,7 @@ const Contact = () => {
               </div>
               <div>
                 <h5 className="font-bold text-lg">Email Us</h5>
-                <p className="text-lg">ceo@incubenation.com</p>
+                <p className="text-lg">Info@wawu.foundation</p>
               </div>
             </div>
           </div>

@@ -25,9 +25,14 @@ const GetInvolved = () => {
           <p className="text-[#07293d] mt-2 relative z-10">
             Your contributions can change the lives of young footballers.
           </p>
-          <button className="mt-4 bg-[#07293d] text-white py-2 px-4 rounded-md hover:bg-[#11698E] transition relative z-10">
+          <a
+            href="https://your-donation-link.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block mt-4 bg-[#07293d] text-white py-2 px-4 rounded-md hover:bg-[#11698E] transition relative z-10"
+          >
             Donate Now
-          </button>
+          </a>
         </div>
 
         {/* Partner with Us Card */}
@@ -46,9 +51,14 @@ const GetInvolved = () => {
           <p className="text-[#07293d] mt-2 relative z-10">
             Collaborate with WAWU to expand opportunities for players.
           </p>
-          <button className="mt-4 bg-[#07293d] text-white py-2 px-4 rounded-md hover:bg-[#11698E] transition relative z-10">
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSfNBVR6FfWGeUCBCVLjXpW0KvXR_bcbhCyoicimhFZAUtXItw/viewform?pli=1"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block mt-4 bg-[#07293d] text-white py-2 px-4 rounded-md hover:bg-[#11698E] transition relative z-10"
+          >
             Become a Partner
-          </button>
+          </a>
         </div>
 
         {/* Volunteer Card */}
@@ -66,9 +76,14 @@ const GetInvolved = () => {
             Join our team and make a direct impact on the next generation of
             Indian football stars.
           </p>
-          <button className="mt-4 bg-[#07293d] text-white py-2 px-4 rounded-md hover:bg-[#11698E] transition relative z-10">
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSfJzL7aBuZdw-GSbLtiYcx99QqjGFuaQN2eKeFnqIhBiyL9Hg/viewform?usp=header"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block mt-4 bg-[#07293d] text-white py-2 px-4 rounded-md hover:bg-[#11698E] transition relative z-10"
+          >
             Volunteer Now
-          </button>
+          </a>
         </div>
       </div>
     </section>

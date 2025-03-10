@@ -76,7 +76,7 @@ const Events = () => {
               📅 <span className="text-white">Event Date:</span> April 2025
             </p>
             <p className="text-lg font-extrabold font-sans-serif  text-white">
-              👥 <span className="text-[#1bde09]">Age Group:</span> 14 - 21
+              👥 <span className="text-[#1bde09]">Age Group:</span> 12 - 14
               Years
             </p>
           </motion.div>
