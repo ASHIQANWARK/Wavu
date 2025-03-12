@@ -13,8 +13,7 @@ const team = [
   { name:"SHARATH K", role:"FOUNDER", image:sharathImage },
   { name: "SHAFI SHOUKATH", role: "CO-FOUNDER", image: shafiImage },
   { name: "SAINUL ABID K.A", role: "PROJECT MANAGER", image:abidImage },
-  
-]
+];
 
 const Team = () => {
   return (
@@ -27,7 +26,7 @@ const Team = () => {
         </h2>
 
         {/* Team Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
           {team.map((member, index) => (
             <div
               key={index}
@@ -71,5 +70,3 @@ const Team = () => {
 };
 
 export default Team;
-
-  
