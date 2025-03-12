@@ -1,16 +1,15 @@
 import React from "react";
 import { User } from "lucide-react";
 import { FaInstagram, FaFacebook, FaLinkedin, FaXTwitter } from "react-icons/fa6";
-
-// Correct Imports for Local Images
 import shafiImage from "../assets/images/IMG_3596.png";
 import ckImage from "../assets/images/WAWUP4.jpg";
 import abidImage from "../assets/images/abid.jpg";
 import sharathImage from "../assets/images/sharath.jpg";
-
+import shaleelaImage from "../assets/images/SHALEELA.jpg"
 
 const team = [
   { name: "CK VINEETH", role: "Ambassador", image: ckImage },
+  { name: "SHALEELA K", role: "TRUSTEE", image: shaleelaImage },
   { name:"SHARATH K", role:"FOUNDER", image:sharathImage },
   { name: "SHAFI SHOUKATH", role: "CO-FOUNDER", image: shafiImage },
   { name: "SAINUL ABID K.A", role: "PROJECT MANAGER", image:abidImage },

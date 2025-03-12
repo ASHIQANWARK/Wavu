@@ -329,7 +329,9 @@ const INLLBrochure = () => {
                   {item.icon}
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold text-gray-900">{item.title}</h3>
+                  <h3 className="text-xl font-semibold text-gray-900">
+                    {item.title}
+                  </h3>
                   <p className="text-gray-600">{item.description}</p>
                 </div>
               </div>
@@ -337,7 +339,6 @@ const INLLBrochure = () => {
           </motion.div>
         </div>
       </section>
-
 
       <section className="max-w-7xl mx-auto py-16 px-6 sm:px-12 lg:px-16">
         {/* Section Heading */}
@@ -367,41 +368,55 @@ const INLLBrochure = () => {
 
           {/* Right Side: Registration Options */}
           <motion.div
-            className="w-full md:w-1/2 bg-gradient-to-r from-[#0F3460] to-[#16213E] p-8 sm:p-12 rounded-xl shadow-xl text-center border border-gray-700"
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            className="w-full md:w-2/3 lg:w-1/2 mx-auto bg-gradient-to-r from-[#0F3460] to-[#16213E] p-8 sm:p-12 rounded-xl shadow-xl text-center border border-gray-700"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
           >
             <h3 className="text-3xl font-semibold text-white mb-6">
               Choose Your Registration Type
             </h3>
 
-            <div className="flex flex-col sm:flex-row justify-center gap-6">
-              {/* Individual Button */}
-              <Link to="/register/individual">
-                <button className="flex items-center gap-3 bg-orange-500 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg shadow-lg transition-all duration-300 transform hover:scale-110">
+            <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-6">
+              {/* Individual Player */}
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSfNwDFGGwMVL5MMon_m2eVasd6-ntdRy8VZuuftFwTUcSa-9w/viewform?usp=header"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button className="flex items-center gap-3 bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 px-6 rounded-lg shadow-lg transition-all duration-300 transform hover:scale-110">
                   <FaUser className="text-xl" /> Individual Players
                 </button>
-              </Link>
-              <Link to="/register/individualteam">
-                <button className="flex items-center gap-3 bg-white-500 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg shadow-lg transition-all duration-300 transform hover:scale-110">
+              </a>
+
+              {/* Individual Team */}
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSdKyREa7JdRmRtreUtJxqzbiJyln7NMYTmyFUbqxzLvfLYp8g/viewform?usp=header"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button className="flex items-center gap-3 bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg shadow-lg transition-all duration-300 transform hover:scale-110">
                   <FaTeamspeak className="text-xl" /> Individual Team
                 </button>
-              </Link>
+              </a>
 
-              {/* Organizing Partner Button */}
-              <Link to="/register/partner">
-                <button className="flex items-center gap-3 bg-green-500 hover:bg-green-700 text-white font-semibold py-3 px-6 rounded-lg shadow-lg transition-all duration-300 transform hover:scale-110">
+              {/* Organizing Partner */}
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSdxhOKZREb_hj-0xMmVQpxmAkxaZHDmj00LQFD2sdWUAMn3JA/viewform?usp=header"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button className="flex items-center gap-3 bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-6 rounded-lg shadow-lg transition-all duration-300 transform hover:scale-110">
                   <FaUsers className="text-xl" /> Organizing Partner
                 </button>
-              </Link>
+              </a>
             </div>
           </motion.div>
         </div>
 
         {/* How to Register Section */}
         <motion.div
-          className="mt-16 bg-gradient-to-r from-[#0F3460] to-[#16213E] p-8 sm:p-10 rounded-tr-full shadow-lg text-center border border-gray-200"
+          className="mt-16 bg-gradient-to-r from-[#0F3460] to-[#16213E] p-8 sm:p-10  shadow-lg text-center border border-gray-200"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
